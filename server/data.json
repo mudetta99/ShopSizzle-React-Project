@@ -25,7 +25,7 @@
       "password": "$2b$10$kdv.H9f6PiqxHwwP4eJhwOnMFU93dnkhsKio4ZuZtk2CXiqW2Z0.2"
     },
     {
-      "id": 1740172751368,
+      "id": "1740172751368",
       "name": "kareem",
       "email": "kareem@gmail.com",
       "password": "$2b$10$ktFGaFaLgm2Qxp1R9bcvAu7Y74tU3HPHCRjVaNQCPIm2gRsr2AIgu"
@@ -39,7 +39,8 @@
       "category": "Laptop",
       "quantity": "22",
       "description": "bvate 14\" Laptop Win 11 256GB SSD Up to 1TB SSD Expand Celeron N4020 Up to 2.8Ghz Dual-Core Processor 6GB DDR4 1920x1080 FHD Dual WiFi BT4.2 with Webcam.",
-      "image": "https://m.media-amazon.com/images/I/71foIEZhgmL._AC_SL1500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/71foIEZhgmL._AC_SL1500_.jpg",
+      "status": "trend"
     },
     {
       "id": "af3f",
@@ -48,7 +49,8 @@
       "category": "Mobile",
       "quantity": "65",
       "description": "SAMSUNG Galaxy S25 Ultra Cell Phone, 512GB, AI Smartphone, Unlocked Android, AI Camera, Fast Processor, Long Battery Life, 2025, Titanium Silverblue\n",
-      "image": "https://m.media-amazon.com/images/I/71bWBcWQnDL._AC_SL1500_.jpg"
+      "image": "https://m.media-amazon.com/images/I/71bWBcWQnDL._AC_SL1500_.jpg",
+      "status": "trend"
     },
     {
       "id": "c6b4",
@@ -69,15 +71,6 @@
       "image": "https://m.media-amazon.com/images/I/710+IqmUdlL._AC_SL1500_.jpg"
     },
     {
-      "id": "e5a7",
-      "name": "Apple Carplay Screen",
-      "price": "99",
-      "category": "Screen",
-      "quantity": "50",
-      "description": "Apple Carplay Screen for Car, 7\" HD Portable Car Stereo Touch Screen with Wireless Android Auto, Backup Camera, Car Audio Receivers with Voice Control,...\n",
-      "image": "https://m.media-amazon.com/images/I/715LHnNFNmL._AC_SL1500_.jpg"
-    },
-    {
       "id": "24d5",
       "name": "Orzly Gaming Headset ",
       "price": "320",
@@ -85,51 +78,6 @@
       "quantity": "13",
       "description": "Orzly Gaming Headset with Mic for Nintendo Switch OLED and Lite Joycon Color Match with Led Light Microphone & Remote - Hornet RXH-20 Tanami Edition",
       "image": "https://m.media-amazon.com/images/I/61KnD1IvqsL._AC_SL1500_.jpg"
-    },
-    {
-      "id": "3",
-      "name": "Cup of tea",
-      "price": "120",
-      "category": "tea",
-      "quantity": 20,
-      "description": "Hot Tea in a Glass on Wooden Table\n",
-      "image": "https://images.pexels.com/photos/28643910/pexels-photo-28643910/free-photo-of-steaming-hot-tea-in-a-glass-on-wooden-table.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": "4",
-      "name": "Pentax camera",
-      "price": "1250",
-      "category": "camera",
-      "quantity": "2",
-      "description": "A Black and Silver Vintage Camera",
-      "image": "https://images.pexels.com/photos/7727508/pexels-photo-7727508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": "5",
-      "name": "Vintage Classic Skull",
-      "price": "255",
-      "category": "Hat",
-      "quantity": 20,
-      "description": "Vintage Classic Skull Cap Embroidery Beanie Fasion Hat Cuffed Winter Hat Knit Comes with Warm Gloves Gifts for Men Women Fans",
-      "image": "https://m.media-amazon.com/images/I/812Mky3zXIL._AC_SX522_.jpg"
-    },
-    {
-      "id": "7414",
-      "name": "White Nike Sneakers",
-      "price": "222",
-      "category": "shoes",
-      "quantity": "12",
-      "description": "Photo of Sneakers on White Background",
-      "image": "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": "2",
-      "name": "Coffee paper cup",
-      "price": "12",
-      "category": "coffee cup",
-      "quantity": "99",
-      "description": "Panda Printed Paper Coffee Cup",
-      "image": "https://images.pexels.com/photos/885021/pexels-photo-885021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": "e002",
@@ -165,23 +113,156 @@
       "category": "Laptop",
       "quantity": "50",
       "description": "KAIGERR 2025 Gaming Laptop, Laptop with AMD Ryzen 9 6900HX (8C/16T, Up to 4.9GHz), 16GB DDR5 512GB NVMe SSD Windows 11 Laptop Computer, 16-inch FHD Display,...\n",
-      "image": "https://m.media-amazon.com/images/I/81fEsw811jL._AC_SL1500_.jpg"
-    }
-  ],
-  "cart": [
-    {
-      "id": "af3f",
-      "name": "SAMSUNG Galaxy S25 Ultra",
-      "price": "1200",
-      "image": "https://m.media-amazon.com/images/I/71bWBcWQnDL._AC_SL1500_.jpg",
-      "quantity": 1
+      "image": "https://m.media-amazon.com/images/I/81fEsw811jL._AC_SL1500_.jpg",
+      "status": "trend"
     },
     {
-      "id": "c6b4",
-      "name": "Meta Quest 3S",
-      "price": "451",
-      "image": "https://m.media-amazon.com/images/I/71W5GcQ8-JL._SL1500_.jpg",
-      "quantity": 1
+      "id": "c1d9",
+      "name": "iPhone 16 Pro Max",
+      "price": "1200",
+      "category": "Mobile",
+      "quantity": "32",
+      "description": "The iPhone 16 Pro Max, like its predecessor, comes with a Super Retina XDR display and all-screen OLED. It has a resolution of 2868 x 1320 pixels with 460 ppi. Because of ProMotion technology, this device gets an adaptive refresh rate ranging from 1 Hz to 120",
+      "image": "https://m.media-amazon.com/images/I/51LqthmgJoL._AC_.jpg",
+      "status": "trend"
+    },
+    {
+      "id": "759f",
+      "name": "Xiaomi Redmi Note 14",
+      "price": "1199",
+      "category": "Mobile",
+      "quantity": "10",
+      "description": "Xiaomi Redmi Note 14 Smartphone, 8 + 256 GB, Ocean Blue, 108 MP AI Camera System, 5500 mAh Battery, 120 Hz Eye Protection Display, AI Functions | 18 Month...\n",
+      "image": "https://m.media-amazon.com/images/I/512qOLRBL8L._AC_.jpg"
+    },
+    {
+      "id": "9628",
+      "name": "Apple 2024 MacBook Air ",
+      "price": "2599",
+      "category": "MacBook",
+      "quantity": "9",
+      "description": "Apple 2024 MacBook Air 13-inch Laptop with M3 chip: Built for Apple Intelligence, 13.6-inch Liquid Retina Display, 16GB Unified Memory, 256GB SSD Storage,...\n",
+      "image": "https://m.media-amazon.com/images/I/71x9JI-Il0L._AC_SL1500_.jpg"
+    },
+    {
+      "id": "4fef",
+      "name": "Microsoft Surface Laptop",
+      "price": "3550",
+      "category": "Laptop",
+      "quantity": "50",
+      "description": "Microsoft Surface Laptop (2024), Windows 11 Copilot+ PC, 13.8\" Touchscreen Display, Snapdragon X Elite (12 core), 16GB RAM, 1TB SSD Storage, Black\n",
+      "image": "https://m.media-amazon.com/images/I/51Yi2aZ218L._AC_SL1000_.jpg"
+    },
+    {
+      "id": "5f99",
+      "name": "Dell Inspiron 5440 ",
+      "price": "785",
+      "category": "Laptop",
+      "quantity": "99",
+      "description": "Portable device, nice view: Enjoy a comfortable viewing experience on a light and compact 14-inch laptop with a 16:10 aspect ratio and FHD+ resolution display. Equipped with Dell ComfortView Plus which allows for your eyes to stay comfortable, even with prolonged screen time, by reducing harmful low blue light without sacrificing true-to-life color.",
+      "image": "https://m.media-amazon.com/images/I/71jq7qdjh7L._AC_SL1500_.jpg"
+    },
+    {
+      "id": "77c9",
+      "name": "MSI Raider GE68HX",
+      "price": "3599",
+      "category": "Laptop",
+      "quantity": "10",
+      "description": "MSI Raider GE68HX 16” 144Hz MiniLED UHD+ Gaming Laptop: Intel Core i9-14900HX, NVIDIA Geforce RTX 4090, 64GB DDR5, 2TB NVMe SSD, Thunderbolt 4, Cooler Boost 5, Win 11 Home: Black 14VIG-285US\n",
+      "image": "https://m.media-amazon.com/images/I/71cit5wE+jL._AC_SL1500_.jpg"
+    },
+    {
+      "id": "6f98",
+      "name": "LG 45GR95QE-B Curved QHD",
+      "price": "699",
+      "category": "Screen",
+      "quantity": "22",
+      "description": "LG 45GR95QE-B Curved Ultragear Gaming Monitor 45-Inch (3440 x 1440) OLED Display, 240Hz Refresh Rate, 0.03ms GtG Response Time, NVIDIA G-SYNC Compatible, Contrast Ratio 1.5M:1, Black\n",
+      "image": "https://m.media-amazon.com/images/I/71qXMfesyAL._AC_SL1500_.jpg"
+    },
+    {
+      "id": "ceee",
+      "name": "LG 32\" Ultragear QHD",
+      "price": "544",
+      "category": "Screen",
+      "quantity": "10",
+      "description": "LG 32\" Ultragear QHD (2560x1440) Gaming Monitor, 180Hz, 1ms, IPS, DisplayHDR 400, NVIDIA G-SYNC Compatible, AMD FreeSync, VESA Adaptive Sync, HDR10, Tilt/Height/Pivot Stand, HDMI, DisplayPort, Black",
+      "image": "https://m.media-amazon.com/images/I/91PqBOPFyoL._AC_SL1500_.jpg",
+      "status": "trend"
+    },
+    {
+      "id": "0740",
+      "name": "Acer Predator X32 X3",
+      "price": "500",
+      "category": "Screen",
+      "quantity": "50",
+      "description": "Acer Predator X32 X3 | 31.5\" UHD 3840 x 2160 OLED Gaming Monitor | AMD FreeSync Premium Pro | 480Hz at 1920 x 1080 (DFR) | Up to 0.01ms | 1000nits @ HDR 3% | USB Type-C, 1 x DP 1.4 & 2 x HDMI 2.1",
+      "image": "https://m.media-amazon.com/images/I/81jOeafz1eL._AC_SL1500_.jpg"
+    },
+    {
+      "id": "f47c",
+      "name": "realme 12 5G",
+      "price": "500",
+      "category": "Mobile",
+      "quantity": "66",
+      "description": "Display 17.02 cm (6.7 inch) Full HD+ Display || 120 Hz Curved Vision OLED display! The swift 16× HyperPrecise Touch ensures lightning-fast & accurate responses, while ProXDR restores HDR's full dynamic range for unparalleled photo viewing. With 2160 Hz PWM dimming & AI brightness adjustment for superior visual comfort, this display is an eye-friendly treat. The sleek 2.32 mm Ultra Narrow Chin, rugged Double-reinforced Glass & HyperVision Mode contribute to an ergonomic & immersive delight.\n",
+      "image": "https://m.media-amazon.com/images/I/81dkPBU5S7L._AC_SL1500_.jpg"
+    },
+    {
+      "id": "2b8e",
+      "name": "Samsung Galaxy Z Fold6",
+      "price": "2499",
+      "category": "Mobile",
+      "quantity": "12",
+      "description": "Samsung Galaxy Z Fold6 AI Phone, 12GB RAM, 256GB Storage, Silver Shadow, Android Smartphone, 50MP Camera, Big Screen, Multi-tasking, S Pen, Long Battery Life, UAE Version\n",
+      "image": "https://m.media-amazon.com/images/I/71y20orCmOL._AC_SL1500_.jpg"
+    },
+    {
+      "id": "bcbe",
+      "name": "Samsung Galaxy A55",
+      "price": "259",
+      "category": "Mobile",
+      "quantity": "22",
+      "description": "Samsung Galaxy A55 5G, Android Smartphone, Dual SIM Mobile Phone, 8GB RAM, 128GB Storage, Awesome Navy -1 Year Warranty/Local Version",
+      "image": "https://m.media-amazon.com/images/I/71a3QoZJqPL._AC_SL1500_.jpg"
+    },
+    {
+      "id": "b3ff",
+      "name": "Redmi Watch 5 Active",
+      "price": "250",
+      "category": "Watch",
+      "quantity": "10",
+      "description": "Redmi Watch 5 Active Smartwatch, 2.0 Inch LCD Display, 18 Day Battery, 140+ Sports Modes, Heart Rate and SPO₂ Tracking, 5ATM Waterproof, Calls, Fitness Tracker -Black|1 year manufacturer warranty",
+      "image": "https://m.media-amazon.com/images/I/61uhFJO-xyL._AC_SL1500_.jpg"
+    },
+    {
+      "id": "1d98",
+      "name": "Samsung Galaxy Watch7 Classic",
+      "price": "1599",
+      "category": "Watch",
+      "quantity": "44",
+      "description": "Samsung Galaxy Watch7 Classic Smartwatch, Cream, 40mm, Bluetooth Sleep Coaching, Fitness Tracker, 1 Year Warranty/Local Version",
+      "image": "https://m.media-amazon.com/images/I/61gvHgA0yWL._AC_SL1500_.jpg"
+    },
+    {
+      "id": "aea2",
+      "name": "Apple Watch Ultra 2 ",
+      "price": "4599",
+      "category": "Watch",
+      "quantity": "12",
+      "description": "Apple Watch Ultra 2 GPS + Cellular 49mm Smartwatch, Sports Watch with Black Rugged Titanium Case with Black Trail Loop - M/L. Fitness Tracker, Precision GPS, Extra-Long Battery Life, Carbon Neutral",
+      "image": "https://m.media-amazon.com/images/I/81LWsjyYoML._AC_SL1500_.jpg",
+      "status": "trend"
+    },
+    {
+      "id": "313a",
+      "name": "HUAWEI MatePad Pro 12.2",
+      "price": "6799",
+      "category": "Tablet",
+      "quantity": "33",
+      "description": "HUAWEI MatePad Pro 12.2\" Tablet PaperMatte Edition Pad 12GB+512GB Tab, HUAWEI Glide Keyboard, 2.8K Tandem OLED FullView Display, 144 Hz Refresh Rate + Huawei freebuds pro 3 + huawei M-Pencil",
+      "image": "https://m.media-amazon.com/images/I/51HiSOs1JjL._AC_SL1000_.jpg"
     }
-  ]
+  ],
+  "cart": []
 }

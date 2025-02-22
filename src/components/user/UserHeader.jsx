@@ -43,7 +43,7 @@ function UserHeader() {
 
             <Nav.Link 
               as={NavLink} 
-              to="/user/cart" 
+              to="/shopsizzle/cart" 
               className={({ isActive }) => 
                 `nav-link ${isActive ? 'active-link' : ''}`
               }

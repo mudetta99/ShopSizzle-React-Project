@@ -114,7 +114,7 @@ export default function Cart() {
           confirmButtonText: 'OK'
         });
   
-        navigate('/user/shipped');
+        navigate('/shopsizzle/shipped');
   
       } catch (error) {
         console.error('Error clearing cart:', error);
@@ -149,7 +149,7 @@ export default function Cart() {
                 <tr key={item.id}>
                   <td><img src={item.image} alt={item.name} width="50" /></td>
                   <td>
-                    <Link to={`/user/products/${item.id}`} className="text-decoration-none">
+                    <Link to={`/shopsizzle/products/${item.id}`} className="text-decoration-none">
                       {item.name}
                     </Link>
                   </td>

@@ -12,6 +12,8 @@ import AllProducts from '../pages/user/AllProducts'
 import Cart from '../pages/user/Cart'
 import UserProductDetails from '../pages/user/ProductDetails'
 import OrderShipped from '../pages/user/OrderShipped'
+import AboutUs from '../pages/user/AboutUs'
+import ContactUs from '../pages/user/ContactUs'
 
 export default function MainLayout() {
 
@@ -29,10 +31,12 @@ export default function MainLayout() {
               <Route path="/register" element={<RegisterPage />} />
               <Route path="/login" element={<Login />} />
               <Route path="/home/all products" element={<AllProducts />} />
-              <Route path="/user/cart" element={<Cart />} />
-              <Route path="/user/shipped" element={<OrderShipped />} />
-              <Route path="/user/products/:id" element={<UserProductDetails />} />
-              <Route path='/user/*' element={<NotFound /> } />
+              <Route path="/shopsizzle/cart" element={<Cart />} />
+              <Route path="/shopsizzle/shipped" element={<OrderShipped />} />
+              <Route path="/shopsizzle/about us" element={<AboutUs />} />
+              <Route path="/shopsizzle/contact us" element={<ContactUs />} />
+              <Route path="/shopsizzle/products/:id" element={<UserProductDetails />} />
+              <Route path='/shopsizzle/*' element={<NotFound /> } />
 
 
               </Route>

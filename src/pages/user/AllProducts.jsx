@@ -24,7 +24,7 @@ export default function AllProducts() {
     try {
       const response = await fetch('http://localhost:5000/cart');
       if (!response.ok) throw new Error('Failed to fetch cart data');
-      
+
       const cartData = await response.json();
       setCartItems(cartData);
     } catch (error) {
@@ -53,7 +53,7 @@ export default function AllProducts() {
       name: product.name,
       price: product.price,
       image: product.image,
-      quantity: 1, 
+      quantity: 1,
     };
 
     try {
@@ -80,8 +80,8 @@ export default function AllProducts() {
   };
 
   const categories = ['All', ...new Set(products.map(product => product.category))];
-  
-  const filteredProducts = products.filter(product => 
+
+  const filteredProducts = products.filter(product =>
     (selectedCategory === 'All' || product.category === selectedCategory) &&
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -91,15 +91,19 @@ export default function AllProducts() {
       <Navbar bg="dark" variant="dark" expand="lg" className="shadow-sm">
         <Container>
           <Nav className="ml-auto">
-            <Nav.Link href="/user/cart" className="d-flex align-items-center">
+            <Nav.Link href="/shopsizzle/cart" className="d-flex align-items-center">
               <FaShoppingCart className="me-2" />
               <span>Cart ({cartItems.length})</span>
             </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
-
+      <Link to="/shopsizzle/products/313a" >
+        <img className="d-block w-100 carousel-image mb-5" src={"https://m.media-amazon.com/images/G/42/Egypt-hq/2025/img/Consumer_Electronics/RMD25/Artboard_2_EN.png"} />
+      </Link>
+      <img className="d-block w-100 carousel-image mb-5" src={"https://m.media-amazon.com/images/G/42/Egypt-hq/2025/img/Consumer_Electronics/RMD25/1500x200_ASINs_EN_JBL.png"} />
       <Container className="mt-4">
+
         <h2 className="text-center mb-4">All Products</h2>
 
         <Form className="filters">
@@ -110,8 +114,8 @@ export default function AllProducts() {
             onChange={(e) => setSearchTerm(e.target.value)}
             className="search-bar"
           />
-          <Form.Select 
-            value={selectedCategory} 
+          <Form.Select
+            value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
             className="category-dropdown"
           >
@@ -129,20 +133,20 @@ export default function AllProducts() {
                   <Card.Img variant="top" src={product.image} className="product-image" />
                   <Card.Body className="d-flex flex-column justify-content-between">
                     <div>
-                      <Link to={`/user/products/${product.id}`} className="product-link">
+                      <Link to={`/shopsizzle/products/${product.id}`} className="product-link">
                         <Card.Title>{product.name}</Card.Title>
                       </Link>
                       <Card.Text className="text-muted">${product.price}</Card.Text>
                     </div>
                     <div className="d-flex justify-content-between mt-3">
-                      <Button 
-                        variant="outline-dark" 
+                      <Button
+                        variant="outline-dark"
                         onClick={() => handleAddToCart(product)}
                         className="add-to-cart-btn"
                       >
                         <FaPlus className="me-2" />
                       </Button>
-                      <Link to={`/user/products/${product.id}`}>
+                      <Link to={`/shopsizzle/products/${product.id}`}>
                         <Button variant="outline-primary" className="view-btn">
                           <FaEye className="me-2" />
                         </Button>

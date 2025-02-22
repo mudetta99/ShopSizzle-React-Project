@@ -24,7 +24,8 @@ export default function Footer() {
               <ul className="footer-links">
                 <li><a href="/" className="footer-link">Home</a></li>
                 <li><a href="/home/all products" className="footer-link">Products</a></li>
-                <li><a href="/contact" className="footer-link">Support</a></li>
+                <li><a href="/shopsizzle/about us" className="footer-link">About Us</a></li>
+                <li><a href="/shopsizzle/contact us" className="footer-link">Contact Us</a></li>
               </ul>
             </div>
           </Col>
