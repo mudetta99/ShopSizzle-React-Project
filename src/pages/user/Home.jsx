@@ -59,7 +59,7 @@ export function Home() {
         </Link>
 
         <Container>
-          <h2 className="section-title text-center mb-5">Trending Products</h2>
+          <h2 className="section-title text-center mb-5">Trending</h2>
           {isLoading ? (
             <div className="text-center">
               <div className="spinner-border text-primary" role="status">
@@ -111,7 +111,7 @@ export function Home() {
           <img className="d-block w-100 carousel-image" src={"https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/649f05f8-878f-41fe-a87e-086c35cd1f4b._CR0%2C0%2C1500%2C300_SX1500_.jpg"} />
 
           <Container>
-            <h2 className="section-title text-center mt-5 mb-5">Screen Products</h2>
+            <h2 className="section-title text-center mt-5 mb-5">Screen</h2>
             {isLoading ? (
               <div className="text-center">
                 <div className="spinner-border text-primary" role="status">
@@ -173,7 +173,7 @@ export function Home() {
           </div>
 
           <Container>
-            <h2 className="section-title text-center mb-5">Laptops</h2>
+            <h2 className="section-title text-center mb-5">Laptop</h2>
             {isLoading ? (
               <div className="text-center">
                 <div className="spinner-border text-primary" role="status">
