@@ -342,6 +342,10 @@ export function Home() {
               </Row>
             )}
           </Container>
+            <Link to="shopsizzle/products/6fe9">
+            <img className="d-block w-100 carousel-image mb-5" src={"https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/dd475701-ca35-4f9f-8b5b-871255fcde51._CR0%2C0%2C3000%2C600_SX1500_.jpg"} />
+            </Link>
+          
         </div>
       </section>
     </div>

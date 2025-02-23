@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Container, Card, Form, Button, Alert } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom'; 
 import { useDispatch, useSelector } from 'react-redux';
 import { registerUser } from '../../store/registerSlice';
 import React from 'react';
+import Swal from 'sweetalert2';
 
 export default function RegisterPage() {
     const [formData, setFormData] = useState({
@@ -16,6 +17,7 @@ export default function RegisterPage() {
     const [errors, setErrors] = useState({});
     const dispatch = useDispatch();
     const { loading, error, success } = useSelector(state => state.registerSlice);
+    const navigate = useNavigate(); 
 
     const validateForm = () => {
         const newErrors = {};
@@ -64,6 +66,17 @@ export default function RegisterPage() {
                     email: "",
                     password: "",
                     confirmPassword: ""
+                });
+
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'You have been registered successfully!',
+                    icon: 'success',
+                    confirmButtonText: 'OK',
+                    timer: 2000, 
+                    timerProgressBar: true,
+                }).then(() => {
+                    navigate('/'); 
                 });
             })
             .catch(error => {

@@ -3,6 +3,7 @@ import { Form, Button, Container, Row, Col, Alert } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginUser } from '../../store/userSlice';
+import Swal from 'sweetalert2'; 
 
 export default function Login() {
     const [email, setEmail] = useState('');
@@ -13,22 +14,35 @@ export default function Login() {
     
     const { userInfo, loading, error } = useSelector((state) => state.user);
 
-
-
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(loginUser({ email, password }))
             .unwrap()
             .then(() => {
-                if (email === 'admin@admin.com') {
-                    navigate('/products'); 
-                } else {
-                    navigate('/'); 
-                }
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Login successful! Redirecting...',
+                    icon: 'success',
+                    confirmButtonText: 'OK',
+                    timer: 2000,
+                    timerProgressBar: true,
+                }).then(() => {
+                    if (email === 'admin@admin.com') {
+                        navigate('/products'); 
+                    } else {
+                        navigate('/'); 
+                    }
+                });
             })
-            .catch(() => {}); 
+            .catch((error) => {
+                Swal.fire({
+                    title: 'Error!',
+                    text: error || 'An error occurred during login. Please try again.',
+                    icon: 'error',
+                    confirmButtonText: 'OK',
+                });
+            });
     };
-    
 
     return (
         <Container className="mt-5">

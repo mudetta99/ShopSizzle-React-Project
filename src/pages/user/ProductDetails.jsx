@@ -100,7 +100,7 @@ export default function ProductDetails() {
                   <Carousel activeIndex={activeImageIndex} onSelect={setActiveImageIndex} interval={null}>
                     {productImages.map((image, index) => (
                       <Carousel.Item key={index}>
-                        <img className="d-block w-100" src={image} alt={`Product Image ${index + 1}`} />
+                        <img className="d-block w-100 mt-5" src={image} alt={`Product Image ${index + 1}`} />
                       </Carousel.Item>
                     ))}
                   </Carousel>

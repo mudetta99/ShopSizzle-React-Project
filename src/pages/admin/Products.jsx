@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import { deleteProduct, getAllProducts } from '../../api/productsApi';
 import { Link } from 'react-router-dom';
 import { FaEdit, FaTrash, FaPlus, FaSearch, FaSpinner, FaEye } from 'react-icons/fa';
@@ -8,19 +8,23 @@ import { useDispatch, useSelector } from 'react-redux';
 import { deleteProductAction, getAllProductsAction } from '../../store/productSlice';
 
 export default function Products() {
-
-
-    const { products, isLoading, errors } = useSelector(store => store.productSlice)
-
+    const { products, isLoading, errors } = useSelector(store => store.productSlice);
     const dispatch = useDispatch();
-    useEffect(  () => {
-        dispatch(getAllProductsAction())
-    }, [] )
+    const [searchTerm, setSearchTerm] = useState(''); 
+
+    useEffect(() => {
+        dispatch(getAllProductsAction());
+    }, []);
 
     const deleteHandler = async (productId) => {
-        dispatch(deleteProductAction(productId))
-    }
+        dispatch(deleteProductAction(productId));
+    };
 
+    const filteredProducts = products.filter((product) =>
+        product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        product.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        product.category.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
     return (
         <div className="products-container">
@@ -34,7 +38,7 @@ export default function Products() {
                         </InputGroup.Text>
                         <FormControl
                             placeholder="Search products..."
-                            onChange={(e) => setSearchTerm(e.target.value)}
+                            onChange={(e) => setSearchTerm(e.target.value)} 
                         />
                     </InputGroup>
 
@@ -64,22 +68,22 @@ export default function Products() {
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Product</th>
+                                <th>Image</th>
+                                <th>Name</th>
                                 <th>Price</th>
                                 <th>Category</th>
-                                <th>Stock</th>
+                                <th>Quantity</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {products.map((product) => (
+                            {filteredProducts.map((product) => (
                                 <tr key={product.id}>
                                     <td className="product-id">#{product.id}</td>
                                     <td className="product-info">
                                         <div className="product-image">
                                             <img src={product.image} alt={product.name} />
                                         </div>
-
                                     </td>
 
                                     <td className="product-info">
@@ -88,8 +92,6 @@ export default function Products() {
                                             <p>{product.description}</p>
                                         </div>
                                     </td>
-
-
 
                                     <td className="product-price">${product.price}</td>
                                     <td className="product-category">
@@ -100,7 +102,7 @@ export default function Products() {
                                             {product.quantity} units
                                         </span>
                                     </td>
-                                    
+
                                     <td className="product-actions">
                                         <Link
                                             to={`${product.id}`}
@@ -129,5 +131,5 @@ export default function Products() {
                 </div>
             )}
         </div>
-    )
+    );
 }
